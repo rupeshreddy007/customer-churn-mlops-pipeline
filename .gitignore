@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# Data (DVC handles it)
+data/
+
+# Models (DVC handles it)
+models/
+
+# MLflow
+mlruns/
+
+# DVC cache
+.dvc/cache
+
+# OS
+.DS_Store
+Thumbs.db

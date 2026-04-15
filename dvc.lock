@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  train_pipeline:
+    cmd: python -m training.train
+    deps:
+    - path: data/raw/customer_churn.csv
+      hash: md5
+      md5: 0f9de68e012bd3aed5fa7cdc9fc421af
+      size: 977501
+    - path: src/data/load_data.py
+      hash: md5
+      md5: b967140fed82aa6b2b7674580fe55915
+      size: 407
+    - path: src/data/preprocess.py
+      hash: md5
+      md5: a8de9180318cc51f887fdf10dd5723b8
+      size: 693
+    - path: src/features/build_features.py
+      hash: md5
+      md5: 1584312db75bdc78d43b29532f7b2b7a
+      size: 1356
+    - path: src/models/evaluate_model.py
+      hash: md5
+      md5: 199b71f7c840266d32443443cbdde6b9
+      size: 263
+    - path: src/models/train_model.py
+      hash: md5
+      md5: f3769c09580524a57a967f2072fe2d87
+      size: 1907
+    - path: training/train.py
+      hash: md5
+      md5: 5b0933915cc56e1997979febfbcf6d77
+      size: 960
+    outs:
+    - path: data/processed/data.csv
+      hash: md5
+      md5: e1db98ceac965d37bda5afe94ad87a1c
+      size: 1081851
+    - path: models/model.pkl
+      hash: md5
+      md5: 6afa5039a5dbe7f5c373446d65eec20a
+      size: 17986578
+    - path: reports/metrics.json
+      hash: md5
+      md5: f6bd658b3dbb4bcd6f0c8bee6399a491
+      size: 76
