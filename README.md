@@ -187,23 +187,6 @@ dvc push
 dvc dag
 ```
 
-##  Contributing
 
-Contributions are welcome! Please:
-
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Push and create a pull request
-
-##  License
-
-This project is licensed under the MIT License.
-
-##  Contact
-
-For questions or issues, please create an issue in the repository.
-
----
 
 **Built with**: MLflow • DVC • FastAPI • scikit-learn • pandas • Docker
